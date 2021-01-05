@@ -1,7 +1,7 @@
-# ali-oss-lazy-upload
+# ali-oss-download
 ## Installation
 ```
-npm install -g ali-oss-lazy-upload
+npm install -g ali-oss-download
 ```
 
 ## Configuration file
@@ -17,17 +17,10 @@ module.exports = {
     bucket: '<OSS bucket name>',
     secure: true,
   },
-  uploader: {
-    region: '<OSS region>',
-    accessKeyId: '<OSS accessKeyId>',
-    accessKeySecret: '<OSS accessKeySecret>',
-    bucket: '<OSS bucket name>',
-    secure: true,
-  },
 }
 ```
 
 ## Usage
 ```
-ali-oss-lazy-upload CONFIG-JS-FILE LOCAL-FILE REMOTE-PATH [FORCE-UPLOAD]
+ali-oss-download CONFIG-JS-FILE REMOTE-PATH LOCAL-FILE [OVER-WRITE]
 ```
