@@ -1,0 +1,33 @@
+{
+  "name": "ali-oss-download",
+  "version": "0.0.1",
+  "description": "Ali OSS Downloader",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha tests/**/*.test.js --timeout 10000 --exit",
+    "lint": "eslint . --fix --cache"
+  },
+  "repository": "https://github.com/fangqk1991/ali-oss-lazy-upload.git",
+  "keywords": [
+    "ali-oss"
+  ],
+  "author": "fang <me@fangqk.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0"
+  },
+  "bin": {
+    "ali-oss-download": "./cli.js"
+  },
+  "dependencies": {
+    "@agora-lab/ali-oss": "^0.6.1",
+    "shelljs": "^0.8.4"
+  }
+}
